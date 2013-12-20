@@ -1,0 +1,119 @@
+
+
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Demo - 使用基本的 Switchable</title><script src="http://g.tbcdn.cn/kissy/k/1.3.2/seed.js" data-config="{combine:true}"></script>
+    <style>
+        #J_Slide {
+            position: relative;
+            width: 1024px;
+            height: 768px;
+            overflow: hidden;
+        }
+        #J_Slide .ks-switchable-nav {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            position: absolute;
+            bottom: 5px;
+            right: 5px;
+            z-index: 99;
+        }
+        #J_Slide .ks-switchable-nav li {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            float: left;
+            width: 16px;
+            height: 16px;
+            line-height: 16px;
+            margin-left: 3px;
+            background-color: #FCF2CF;
+            color: #D94B01;
+            text-align: center;
+            cursor: pointer;
+            list-style: none;
+        }
+        #J_Slide  li img{
+            display: block;
+            width: 1024px;
+            height: 768px;
+        }
+        #J_Slide .ks-switchable-nav li.ks-active {
+            width: 18px;
+            height: 18px;
+            line-height: 18px;
+            margin-top: -1px;
+            color: #FFF;
+            background-color: #FFB442;
+            font-weight: bold;
+        }
+        #J_Slide .ks-switchable-content {
+            margin: 0;
+            padding: 0;
+        }
+        #J_Slide .ks-switchable-content li {
+            width: 1024px;
+            height: 768px;
+            overflow: hidden;
+            margin: 0;
+        }
+        #J_Slide .ks-switchable-nav li,
+        #J_Slide .ks-switchable-trigger-content {
+            position: relative;
+        }
+        #J_Slide .ks-switchable-trigger-mask {
+            position: absolute;
+            right: 0;
+            width: 18px;
+            height: 18px;
+            background-color: #FF9415;
+            visibility: hidden
+        }
+        #J_Slide .ks-active .ks-switchable-trigger-mask {
+            visibility: visible
+        }
+        .list li {
+            margin-left: 10px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            list-style-type: circle;
+        }
+    </style>
+</head>
+<body>
+<div class="demo">
+    <div id="J_Slide" class="loading">
+        <ol class="ks-switchable-content">
+
+
+
+            <li class="hidden"><img alt="" src="http://img.sj.cn/read/52af5204911e463c2b000043.jpg"/></a></li>
+
+
+
+
+            <li><img alt="" src="http://img.sj.cn/read/52a14a1894529df008000016.jpg"/></a></li>
+
+
+
+
+            <li><img alt="" src="http://img.sj.cn/read/52843b53fe8279701400014f.png"/></a></li>
+
+
+        </ol>
+    </div>
+</div>
+<script>
+    KISSY.use("switchable", function (S, Switchable) {
+        var s = new Switchable.Slide('#J_Slide', {
+            effect : 'fade',
+            easing : 'easeOutStrong'
+        });
+    });
+
+</script>
+</body>
+</html>
