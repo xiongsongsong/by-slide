@@ -50,4 +50,5 @@
     <access origin="http://sjplus.cn" subdomains="true" />
     <access origin="http://code.jquery.com/" />
     <access origin="http://192.168.155.100/" />
+    <access origin="http://tbcdn.cn/" subdomains="true" />
 </widget>
