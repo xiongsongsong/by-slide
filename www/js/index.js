@@ -41,10 +41,10 @@ var app = {
 
         if (id !== 'deviceready') return
         document.addEventListener("menubutton", function () {
-            window.location.href = 'http://www.sjplus.cn/go/front-tv-tianmao?t=' + Date.now()
+            window.location.href = 'http://www.sjplus.cn/go/front-tv-slide?t=' + Date.now()
         }, false);
 
-        window.location.href = 'http://www.sjplus.cn/go/front-tv-tianmao'
+        window.location.href = 'http://www.sjplus.cn/go/front-tv-slide'
 
     }
 };
