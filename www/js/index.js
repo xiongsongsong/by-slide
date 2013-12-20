@@ -40,9 +40,11 @@ var app = {
     receivedEvent: function (id) {
 
         if (id !== 'deviceready') return
-        document.addEventListener("menubutton", function () {
-            window.location.href = 'http://www.sjplus.cn/go/front-tv-slide?t=' + Date.now()
-        }, false);
+        document.addEventListener("menubutton", onMenuKeyDown, false);
+
+        function onMenuKeyDown() {
+            window.location.href = 'http://www.sjplus.cn/go/front-tv-slide?r=' + Math.random()
+        }
 
         window.location.href = 'http://www.sjplus.cn/go/front-tv-slide'
 
